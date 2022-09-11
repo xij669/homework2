@@ -6,7 +6,6 @@ module Quicksort {
 
   type Order = Order.Order;
 
-  // Sort the elements of an array using the given comparison function.
   public func sortBy<X>(xs : [X], f : (X, X) -> Order) : [X] {
     let n = xs.size();
     if (n < 2) {
